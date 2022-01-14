@@ -39,6 +39,8 @@ The data required a number of pre-processing steps before the execution of machi
 
 ## Exploratory Data Analysis
 
+![alt text](https://github.com/GemmaBoyle/AMES_housing_data/blob/main/Images/Distribution_of_house_prices.pdf?raw=true)
+
 The distribution of Sale Prices show a distinct positive skew, with the majority of the data concentrated around the 150,000 mark and less of the more expensive properties. 
 
 Equally, the box plot shows a number of significant outliers on the upper end, being more than 1.5 times larger than the interquartile range of the data. I did consider whether to remove a number of the more extreme outliers, but after running models this did not improve scores and hence all data points were eventually included. 
