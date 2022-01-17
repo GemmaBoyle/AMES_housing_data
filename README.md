@@ -39,7 +39,7 @@ The data required a number of pre-processing steps before the execution of machi
 
 ## Exploratory Data Analysis
 
-![Histogram](Images/Distribution_of_house_prices.pdf)
+![Histogram](https://github.com/GemmaBoyle/AMES_housing_data/blob/main/Images/Distribution_of_house_prices.png)
 
 The distribution of Sale Prices show a distinct positive skew, with the majority of the data concentrated around the 150,000 mark and less of the more expensive properties. 
 
