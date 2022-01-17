@@ -43,6 +43,8 @@ The data required a number of pre-processing steps before the execution of machi
 
 The distribution of Sale Prices show a distinct positive skew, with the majority of the data concentrated around the 150,000 mark and less of the more expensive properties. 
 
+![Boxplot](https://github.com/GemmaBoyle/AMES_housing_data/blob/main/Images/Sale_price_boxplot.png)
+
 Equally, the box plot shows a number of significant outliers on the upper end, being more than 1.5 times larger than the interquartile range of the data. I did consider whether to remove a number of the more extreme outliers, but after running models this did not improve scores and hence all data points were eventually included. 
 
 ## Modelling 
@@ -65,7 +67,7 @@ In this case I would suggest the Ridge penalty logistic regression model above i
 
 #### Fixed Features
 
-* Feature importance graph
+![Feature Importance](https://github.com/GemmaBoyle/AMES_housing_data/blob/main/Images/Feature%20Importance.png)
 
 The largest contributor to Sale Price according to the best model (and several other models) was the area of above ground living area, adding close to £11,00 value to the house sale price. The 10 most important features were all positive contributors to the outcome, many to do with the square footage of the property (ground floor footage, first floor footage, second floor footage) or the neighbourhood of the property, as shown. The importance of the features is given in dollar amounts along the horizontal axis. 
 
@@ -75,9 +77,13 @@ A plot of the predicted price against real price shows a good positive linear co
 
 #### Non-fixed features
 
-* Non-fixed feature importance 
+![Non-fixed feature importance](https://github.com/GemmaBoyle/AMES_housing_data/blob/main/Images/Non%20fixed%20feature%20importance.png)
 
 The largest contributor to the variance in residuals is clay tiles, this is a negative relationship meaning that removing clay tiles from a house can add almost 40000 to the sale price of the house, other features being fixed. The largest positive contributor to the variance in residuals is full bath 3, meaning that having three above grade bathrooms contributes around 2200 to the house sale price. 
+
+![Non-fixed real V actual](https://github.com/GemmaBoyle/AMES_housing_data/blob/main/Images/non%20fixed%20predictions%20against%20true.png)
+
+The plot of real against predicted prices for the non-fixed features shows a non-linear association, suggesting the base model may be inappropriate. 
 
 #### Abnormal sales
 
